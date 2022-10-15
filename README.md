@@ -31,4 +31,5 @@ As an example, you can see my configuration in [services/certbot].
 [Alpine Linux]:      https://alpinelinux.org/
 [Docker Compose]:    https://docs.docker.com/compose/
 [Certbot]:           https://github.com/certbot/certbot
+[services/certbot]:  https://github.com/padhi-homelab/services/tree/main/certbot
 [standalone]:        https://eff-certbot.readthedocs.io/en/stable/using.html#standalone
