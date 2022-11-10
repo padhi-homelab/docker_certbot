@@ -1,7 +1,7 @@
 FROM padhihomelab/alpine-base:3.16.2_0.19.0_0.2
 
 
-ARG CERTBOT_VERSION=1.31.0
+ARG CERTBOT_VERSION=1.32.0
 
 
 ADD "https://github.com/certbot/certbot/archive/refs/tags/v${CERTBOT_VERSION}.tar.gz" \
@@ -13,7 +13,8 @@ ADD "https://github.com/certbot/certbot/archive/refs/tags/v${CERTBOT_VERSION}.ta
 # cryptography library
 ARG CARGO_NET_GIT_FETCH_WITH_CLI=true
 
-
+# Adapted from:
+# https://github.com/certbot/certbot/blob/master/tools/docker/core/Dockerfile
 RUN cd /tmp \
  && tar -xvzf certbot.tar.gz \
  && cd certbot-${CERTBOT_VERSION} \
