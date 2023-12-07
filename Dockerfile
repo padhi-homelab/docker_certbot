@@ -1,7 +1,7 @@
-FROM padhihomelab/alpine-base:3.18.4_0.19.0_0.2
+FROM padhihomelab/alpine-base:3.18.5_0.19.0_0.2
 
 
-ARG CERTBOT_VERSION=2.7.4
+ARG CERTBOT_VERSION=2.8.0
 
 
 ADD "https://github.com/certbot/certbot/archive/refs/tags/v${CERTBOT_VERSION}.tar.gz" \
